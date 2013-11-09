@@ -16,11 +16,22 @@ virtualenv setup
 3. If you move the venv folder to another place, you need to reset the virtualenv by:
 	$virtualenv --system-site-packages /Path/To/Virtual/Environment/venv
 
+dependencies
+===========
+1. pymongo
+2. twython (Python wrapper for Twitter)
+3. Networkx
+4. matplotlib
+5. R
+	- igraph (also has a python extension)
+6. numpy
+
+
 
 Servers
 =========
 1. Amazon EC2 Domain Name: ec2-54-205-67-179.compute-1.amazonaws.com
-2. Test Server: jeff@dhcp3-234
+2. Test Server: jeff@dhcp3-234, Hint: 傳chi
 
 
 Installation
@@ -66,9 +77,30 @@ MongoDB Management
 	- Allows admin to quickly see the documents in MongoDB
 	- Connect to the remote db, dhcp3-234
 
+iPython Notebook Remote Access Setup
+=====================================
+1. See detail here: http://nbviewer.ipython.org/urls/raw.github.com/Unidata/tds-python-workshop/master/ipython-notebook-server.ipynb
+
+2. Creating a profile for the server 
+	$ ipython profile create nbserver
+
+[ProfileCreate] Generating default config file: u'/Users/Jeff/.ipython/profile_nbserver/ipython_config.py'
+[ProfileCreate] Generating default config file: u'/Users/Jeff/.ipython/profile_nbserver/ipython_notebook_config.py'
+[ProfileCreate] Generating default config file: u'/Users/Jeff/.ipython/profile_nbserver/ipython_nbconvert_config.py'
+
+3. Go here: si-roller-coaster port = 10001
 
 Issues with Data
 ================
+[11/8]
+* Twitter account problems:
+	- Rahul Gandhi - suspended
+	- Manish Tewari - protected, ManishTewari
+	- Basori Singh Masram - protected, BasorisinghMasr
+	- Sandeep Dikshit - protected, SandeepDikshit
+
+
+[Before 11/8]
 1. There are two Harsh Vardhan in the html files, but one in the politicians.csv
 	- Harsh Vardhan
 	- Shri Harsh Vardhan
@@ -84,3 +116,7 @@ Issues with Data
 6. There are "Sansuma Khunggur Bwiswmuthiary" and "Shri Sansuma Khunggur Bwiswmuthiary" in the html files
 
 7. There are "Ravindra Kumar Pandey" and "Shri Ravindra Kumar Pandey" in the html files
+
+8. "Prasun Banerjee" is not in the combined_politicians.csv
+
+9. "Pradeep Kumar Singh" & "Shri Pradeep Kumar Jain   Aditya" in combined file

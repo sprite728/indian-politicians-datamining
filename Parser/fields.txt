@@ -1,0 +1,24 @@
+p_Name of elected MP
+h_Name
+p_Birthdate
+h_Date of Birth
+h_State Name
+p_State
+p_Twitter
+h_Constituency from which I am elected
+p_Constituency
+h_Party Name
+p_Gender
+p_Total Assets
+h_Social and Cultural Activities
+h_Educational Qualifications
+h_Countries Visited
+h_Permanent Address
+p_Positions Held
+h_Sports and Clubs
+h_Birth Place
+h_Profession
+p_Income
+h_Positions Held
+p_Party affiliation
+h_Special Interests
