@@ -1,0 +1,1 @@
+{ "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "mongobird.global", "name" : "_id_" }, { "v" : 1, "key" : { "uid" : 1 }, "unique" : true, "ns" : "mongobird.global", "name" : "uid", "dropDups" : false, "sparse" : false } ] }

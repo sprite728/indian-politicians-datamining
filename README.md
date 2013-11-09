@@ -90,6 +90,13 @@ iPython Notebook Remote Access Setup
 
 3. Go here: si-roller-coaster port = 10001
 
+Knowledge Snippets
+==================
+1. Copy the collections in the local MongoDB to the MongoDB on a server
+	- use mongodump and mongorestore
+	1. first mongodump it on the local side, github sync
+	2. then, git pull & mongorestore
+
 Issues with Data
 ================
 [11/8]
