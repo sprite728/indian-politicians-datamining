@@ -4,6 +4,16 @@ indian-politicians-datamining
 Data Mining India Politicians
 
 
+important commands
+==================
+1. start ipython notebook on the remote server
+	ipython notebook --profile=nbserver
+
+2. start mongodb on the remote server
+	sudo mongod
+
+3. enter mongo shell
+	mongo
 
 virtualenv setup
 ===============
@@ -44,6 +54,8 @@ MongoDB setup
 * Allow remote access
 	1. Lastest MongoDb package on debian is bind to 127.0.0.1, this address doesn’t allow the connection by remote hosts, to change it u must set bind to 0.0.0.0 for 
 	$ vim /etc/mongodb.conf
+
+	Note: default path /usr/local/etc/mongod.conf
 
 	2.
 	bind_ip = 0.0.0.0
@@ -96,6 +108,7 @@ Knowledge Snippets
 	- use mongodump and mongorestore
 	1. first mongodump it on the local side, github sync
 	2. then, git pull & mongorestore
+	(mongorestore /Users/Jeff/Develop/indian-politicians-datamining/dump/)
 
 Issues with Data
 ================
